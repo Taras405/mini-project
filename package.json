@@ -1,0 +1,28 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /mini-project/",
+    "deploy": "gh-pages -d dist",
+    "server": "npx json-server db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "handlebars": "^4.7.8",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-transformer-hbs": "^1.0.4",
+    "sass": "^1.83.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "gh-pages": "^6.3.0"
+  }
+}
