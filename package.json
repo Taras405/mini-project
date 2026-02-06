@@ -2,6 +2,7 @@
   "name": "mini-project",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://Taras405.github.io/mini-project/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /mini-project/",

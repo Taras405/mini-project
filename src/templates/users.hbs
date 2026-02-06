@@ -1,0 +1,33 @@
+{{#each this}}
+  <li class="list-item">
+    <div class="d-flex justify-content-between">
+      <h6 class="mb-3">ID: {{id}}</h6>
+      <div>
+        <img src={{avatar}} alt="avatar" width="80" height="80" />
+      </div>
+    </div>
+
+    <p><i>{{first_name}} {{last_name}}</i></p>
+
+    <h6>Email:</h6>
+    <p>{{email}}</p>
+
+    <div class="actions-wrapper">
+      <button
+        data-action="edit"
+        data-id={{id}}
+        type="button"
+        class="btn btn-outline-info"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >Edit</button>
+
+      <button
+        data-action="delete"
+        data-id={{id}}
+        type="button"
+        class="btn btn-outline-secondary"
+      >Delete</button>
+    </div>
+  </li>
+{{/each}}
